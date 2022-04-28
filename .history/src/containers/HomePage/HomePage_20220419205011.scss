@@ -1,0 +1,112 @@
+                        
+            .slick-prev {
+                left: -10px !important;
+                z-index: 1000 !important;
+                height: 48px !important;
+                width: 44px !important;
+                background: white !important;
+                border: 2px solid #d7d7d7 !important;
+
+                &:hover {
+                    background: #d7d7d7 !important;   
+                }
+            }
+
+            .slick-prev:before, .slick-next:before {
+                font-family: FontAwesome !important;
+                color: red !important;
+                // content: "\e257" !important;
+
+            }
+
+            .slick-next {
+                right: -10px !important;
+                z-index: 1000 !important;
+                height: 48px !important;
+                width: 44px !important;
+                background: white !important;
+                border: 2px solid #d7d7d7 !important;
+
+                &:hover {
+                    background: #d7d7d7 !important;   
+                }
+            }
+
+            .section-share {
+                &.section-specialty {
+                    background: #f5f5f5;
+                }
+
+                .section-body {            
+                    .section-customize {
+                        .bg-img {
+                            width: 278px;
+                            height: 150px;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-color: #eee;
+
+                            &.section-specialty {
+                                background: url('../../assets/specialty/121042-than-kinh.jpg');
+                            }
+
+                            &.section-medical-facility {
+                                background: url('../../assets/medical-facility/095119-benh-vien-cho-ray-h1.jpg');
+                            }
+
+                            &.section-outstanding-doctor {
+                                background: url('../../assets/doctor/105401-bsckii-tran-minh-khuyen.jpg')
+                            }
+                        }
+                    }           
+        
+                }
+            }
+
+
+            .section-share {
+                height: 330px;
+                // margin: 0 50px;
+            
+                .section-container {
+                    margin: 0 100px;
+                    display: flex;
+                    flex-direction: column;
+            
+                    .section-header {
+                        height: 60px;
+                        margin-bottom: 30px;
+                        padding-top: 30px;
+            
+                        .title-section {
+                            font-size: 22px;
+                            font-weight: 600;
+                        }
+            
+                        .btn-section {
+                            float: right;
+                            padding: 10px 15px;
+                            border: none;
+                            outline: none;
+                            background: #ebebeb;
+                            color: black;
+                            cursor: pointer;
+                            text-transform: uppercase;
+            
+                            &:hover {
+                                color: #fff;
+                                background: #f7d800;
+                            }
+                        }
+                    }            
+
+                }
+            
+            
+            
+            
+            }
+            
+            
+            

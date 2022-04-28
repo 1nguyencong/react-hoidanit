@@ -1,0 +1,42 @@
+{
+    "homeheader": {
+        "speciality": "Specialist",
+        "searchdoctor": "Find a doctor by specialty",
+        "health-facility": "Medical facility",
+        "select-room": " Choose hospital or clinic",
+        "doctor": "Doctor",
+        "select-doctor": "Choose a good doctor",
+        "fee": "Examination package",
+        "check-health": "General health check",
+        "support": "Support",
+        "welcome": "Welcome"
+    },
+
+    "Banne": {
+        "title1": "MEDICAL BACKGROUND",
+        "title2": "COMPREHENSIVE HEALTH CARE",
+        "child1": "Specialized examination",      
+        "child2": "Remote examination",      
+        "child3": "General examination",      
+        "child4": "Psychoanalytic tests",      
+        "child5": "Mental health",      
+        "child6": "Dental examination"      
+    },
+
+    "menu": {
+        "admin": {
+            "manage-user":"Users System",
+            "manage-doctor": "Manage doctors",
+            "manage-admin": "Manage admin",
+            "crud": "CRUD user",
+            "crud-redux": "CRUD redux",
+            "clinic": "Clinic",
+            "manage-clinic": "Manage Clinic",
+            "specialty": "Specialty",
+            "manage-specialty": "Manage Specialty",
+            "handbook": "Handbook",
+            "manage-handbook": "Manage Handbook"
+        }
+    }
+
+}
