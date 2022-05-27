@@ -37,7 +37,7 @@ class OutStandingDoctor extends Component {
                 <div className="section-container">
                     <div className="section-header">
                         <span className="title-section">
-                            <FormattedMessage id="homepage.outstanding-doctor"/> 
+                            <FormattedMessage id="homepage.out-standing-doctor"/> 
                         </span>
                         <button className="btn-section">
                             <FormattedMessage id="homepage.more-infor"/>
@@ -50,7 +50,7 @@ class OutStandingDoctor extends Component {
                             arrDoctors.map((item , index) => {
                                 let imageBase64 = '';
                                 if (item.image) {
-                                    imageBase64 = new Buffer(item.image, 'base64').toString('binary'); 
+                                    imageBase64 = new Buffer(item.image, 'base64').toString('binary');
                                 }
 
                                 let nameVi = `${item.positionData.valueVi}, ${item.lastName} ${item.firstName}`;

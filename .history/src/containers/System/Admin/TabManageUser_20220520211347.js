@@ -31,14 +31,14 @@ class TabManageUser extends Component {
     }
 
     handleEditUser = (user) => {
-        // console.log('hoi dan it  check', user)
+        console.log('hoi dan it  check', user)
         this.props.handleEditUserFromParentKey(user)
 
     }
 
     render() {
-        // console.log('hoi dan it  check all users: ', this.props.listUsers)
-        // console.log('hoi dan it check add users after disUpdate', this.state.userRedux)
+        console.log('hoi dan it  check all users: ', this.props.listUsers)
+        console.log('hoi dan it check add users after disUpdate', this.state.userRedux)
         let arrUsers = this.state.userRedux
         return (
             <table id="TabManageUser">

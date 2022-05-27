@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
-import { LANGUAGES, CRUD_ACTIONS, CommonUtils } from "../../../utils";
+import { LANGUAGES, CRUD_ACTIONS, CommonUtils } from "../../../utils"
 import { connect } from 'react-redux';
 import * as actions from "../../../store/actions";
 import './UserRedux.scss';
@@ -186,8 +186,6 @@ class UserRedux extends Component {
 
     onChangeInput = (event, id) => {
         let copyState = {...this.state}
-
-        // check state
         copyState[id] = event.target.value;
         this.setState({
             ...copyState
@@ -301,7 +299,7 @@ class UserRedux extends Component {
                                     {genders && genders.length > 0 && 
                                         genders.map((item , index) => {
                                             return (
-                                                <option keyMap={index} value={item.keyMap} >{ language === LANGUAGES.VI ? item.valueVi : item.valueEn}</option>
+                                                <option key={index} value={item.keyMap} >{ language === LANGUAGES.VI ? item.valueVi : item.valueEn}</option>
                                                         
                                             )
                                         })
@@ -319,7 +317,7 @@ class UserRedux extends Component {
                                 >
                                     {positions && positions.length > 0 && positions.map((item , index) => {
                                         return (
-                                            <option keyMap={index} value={item.keyMap} >{ language === LANGUAGES.VI ? item.valueVi : item.valueEn}</option>
+                                            <option key={index} value={item.keyMap} >{ language === LANGUAGES.VI ? item.valueVi : item.valueEn}</option>
 
                                         )
                                     })}
@@ -335,7 +333,7 @@ class UserRedux extends Component {
                                 >
                                     {roles && roles.length > 0 && roles.map((item , index) => {
                                         return (
-                                            <option keyMap={index} value={item.keyMap} >{ language === LANGUAGES.VI ? item.valueVi : item.valueEn}</option>
+                                            <option key={index} value={item.keyMap} >{ language === LANGUAGES.VI ? item.valueVi : item.valueEn}</option>
 
                                         )
                                     })}

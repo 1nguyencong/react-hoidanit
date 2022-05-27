@@ -191,8 +191,8 @@ export const fetchAllUserStart = () => {
     return async (dispatch, getState) => {
         try {
             let res = await getAllUser("ALL");  
-            let res1 = await getTopDoctorHomeService(3);
-            console.log('check channel res get top docs', res1)
+            // console.log('check channel res get top docs', res1)
+            // console.log('check result', res) 
             if (res && res.errCode === 0) {
                 toast.success("fetch user succ");
                 dispatch(fetchAllUserSuccess(res.users.reverse()));
@@ -220,10 +220,11 @@ export const fetchAllUserFailed = () => ({
 
 // let res1 = await getTopDoctorHomeService(2);
 
-export const fetchTopDoctor = () => {   
+export const fetchTopDoctor = () => {
     return async (dispatch, getState) => {
         try {
-            let res = await getTopDoctorHomeService('3');   
+            let res = await getTopDoctorHomeService('3');
+            console.log('check doctor', res)
             if (res && res.errCode === 0) {
                 dispatch({
                     type: actionTypes.FETCH_TOP_DOCTORS_SUCCESS,

@@ -29,19 +29,15 @@ class OutStandingDoctor extends Component {
 
     render() {
         let arrDoctors = this.state.arrDoctors;
-        let { language } = this.props;
         arrDoctors = arrDoctors.concat(arrDoctors).concat(arrDoctors);
+        let {language} = this.props;
 
         return (
             <div className="section-share section-outstanding-doctor">
                 <div className="section-container">
                     <div className="section-header">
-                        <span className="title-section">
-                            <FormattedMessage id="homepage.outstanding-doctor"/> 
-                        </span>
-                        <button className="btn-section">
-                            <FormattedMessage id="homepage.more-infor"/>
-                        </button>
+                        <span className="title-section">Bác sĩ nổi bật tuần qua</span>
+                        <button className="btn-section">Xem thêm</button>
                     </div>
                     <div className="section-body">
                         <Slider {...this.props.settings}>
@@ -50,7 +46,7 @@ class OutStandingDoctor extends Component {
                             arrDoctors.map((item , index) => {
                                 let imageBase64 = '';
                                 if (item.image) {
-                                    imageBase64 = new Buffer(item.image, 'base64').toString('binary'); 
+                                    imageBase64 = new Buffer(item.image, 'base64').toString('binary');
                                 }
 
                                 let nameVi = `${item.positionData.valueVi}, ${item.lastName} ${item.firstName}`;

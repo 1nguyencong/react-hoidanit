@@ -191,7 +191,7 @@ export const fetchAllUserStart = () => {
     return async (dispatch, getState) => {
         try {
             let res = await getAllUser("ALL");  
-            let res1 = await getTopDoctorHomeService(3);
+            let res1 = await getTopDoctorHomeService('');
             console.log('check channel res get top docs', res1)
             if (res && res.errCode === 0) {
                 toast.success("fetch user succ");
@@ -220,21 +220,21 @@ export const fetchAllUserFailed = () => ({
 
 // let res1 = await getTopDoctorHomeService(2);
 
-export const fetchTopDoctor = () => {   
-    return async (dispatch, getState) => {
-        try {
-            let res = await getTopDoctorHomeService('3');   
-            if (res && res.errCode === 0) {
-                dispatch({
-                    type: actionTypes.FETCH_TOP_DOCTORS_SUCCESS,
-                    dataDoctor: res.data
-                })
-            }
-        } catch (e) {
-            console.log(' FETCH_TOP_DOCTORS_FAILED ', e)
-            dispatch({
-                type: actionTypes.FETCH_TOP_DOCTORS_FAILED,
-            })
-        }
-    }
-}
+// export const fetchTopDoctor = () => {
+//     return async (dispatch, getState) => {
+//         try {
+//             let res = await getTopDoctorHomeService('3');   
+//             if (res && res.errCode === 0) {
+//                 dispatch({
+//                     type: actionTypes.FETCH_TOP_DOCTORS_SUCCESS,
+//                     dataDoctor: res.data
+//                 })
+//             }
+//         } catch (e) {
+//             console.log(' FETCH_TOP_DOCTORS_FAILED ', e)
+//             dispatch({
+//                 type: actionTypes.FETCH_TOP_DOCTORS_FAILED,
+//             })
+//         }
+//     }
+// }

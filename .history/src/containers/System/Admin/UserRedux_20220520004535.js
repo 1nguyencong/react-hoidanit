@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
-import { LANGUAGES, CRUD_ACTIONS, CommonUtils } from "../../../utils";
+import { LANGUAGES, CRUD_ACTIONS, CommonUtils } from "../../../utils"
 import { connect } from 'react-redux';
 import * as actions from "../../../store/actions";
 import './UserRedux.scss';
@@ -96,7 +96,7 @@ class UserRedux extends Component {
                 lastName: '',
                 phoneNumber: '',
                 address: '',
-                gender: arrGenders && arrGenders.length > 0 ? arrGenders[0].keyMap : '',
+                gender: arrGenders && arrGenders.length > 0 ? arrGenders[0].     : '',
                 position: arrPosition && arrPosition.length > 0 ? arrPosition[0].keyMap : '',
                 role: arrRoles && arrRoles.length > 0 ? arrRoles[0].keyMap : '',
                 avatar: '',
